@@ -2,3 +2,6 @@
 build*
 cache*
 dist*
+__pycache__
+test.osu
+.vscode
