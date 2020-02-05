@@ -8,7 +8,7 @@ osu! diffcalc gui is a small tool which allows the user to map a small part of a
 #### Install
 Requires python 3.4+ and a copy of osu-tools PerformanceCalculator
 1. Create a new virtual environment `python -m venv .venv` and activate using `.venv\scripts\activate`
-1. Install dependencies with `python -m pip install -r requirements.txt` or optionally install the module as a package by running `pip install .`.
+1. Install dependencies with `python -m pip install -r requirements.txt` or optionally install the module as a package by running `pip install .`
 #### Run
 1. Activate the venv (if not already active) using `.venv\scripts\activate`
 2. run `python -m osu_diffcalc_gui -c "dotnet /path/to/PerformanceCalculator.dll"`
