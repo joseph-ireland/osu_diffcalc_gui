@@ -1,0 +1,64 @@
+osu file format v14
+
+[General]
+AudioFilename: audio.mp3
+AudioLeadIn: 0
+PreviewTime: 0
+Countdown: 0
+SampleSet: Soft
+StackLeniency: 0.2
+Mode: 0
+LetterboxInBreaks: 0
+WidescreenStoryboard: 1
+
+[Editor]
+Bookmarks: 0
+DistanceSpacing: 0.9
+BeatDivisor: 4
+GridSize: 4
+TimelineZoom: 2
+
+[Metadata]
+Title:-
+TitleUnicode:-
+Artist:-
+ArtistUnicode:-
+Creator:-
+Version:-
+Source:-
+Tags:test
+BeatmapID:0
+BeatmapSetID:0
+
+[Difficulty]
+HPDrainRate:5
+CircleSize:{{cs}}
+OverallDifficulty:{{od}}
+ApproachRate:{{ar}}
+SliderMultiplier:1.6
+SliderTickRate:1
+
+[Events]
+//Background and Video events
+0,0,"bg.jpg",0,0
+//Break Periods
+//Storyboard Layer 0 (Background)
+//Storyboard Layer 1 (Fail)
+//Storyboard Layer 2 (Pass)
+//Storyboard Layer 3 (Foreground)
+//Storyboard Sound Samples
+
+[TimingPoints]
+0,{{60*1000/bpm}},4,0,0,32,1,0
+
+
+[Colours]
+Combo1 : 114,102,255
+Combo2 : 255,247,91
+Combo3 : 104,255,209
+Combo4 : 220,168,255
+
+[HitObjects]
+{%- for point in points %}
+{{point.x}},{{point.y}},{{point.t}},5,0,0:0:0:0:
+{%- endfor -%}
