@@ -24,7 +24,7 @@ TitleUnicode:-
 Artist:-
 ArtistUnicode:-
 Creator:-
-Version:-
+Version:{{version}}
 Source:-
 Tags:test
 BeatmapID:0
@@ -60,5 +60,5 @@ Combo4 : 220,168,255
 
 [HitObjects]
 {%- for point in points %}
-{{point.x}},{{point.y}},{{point.t}},5,0,0:0:0:0:
+{{point[0]}},{{point[1]}},{{point[2]}},5,0,0:0:0:0:
 {%- endfor -%}

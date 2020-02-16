@@ -1,15 +1,7 @@
 from PySide2 import QtCore, QtGui, QtWidgets
 from collections import namedtuple
 from PySide2.QtWidgets import QGraphicsItem
-
-
-PLAY_AREA_WIDTH=512
-PLAY_AREA_HEIGHT=384
-
-OsuPoint = namedtuple("OsuPoint",("x","y","t"))
-
-def radius(cs):
-    return (512 / 16) * (1 - 0.7 * (cs - 5) / 5)
+from .osu_file import OsuPoint, radius, PLAY_AREA_HEIGHT, PLAY_AREA_WIDTH
 
     
 

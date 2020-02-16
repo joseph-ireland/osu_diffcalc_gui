@@ -4,18 +4,7 @@ import codecs
 import os
 
 from .editor import CircleEditor
-
-
-class OsuFile:
-    path = os.path.dirname(os.path.realpath(__file__))
-    env = jinja2.Environment(loader=jinja2.FileSystemLoader(path))
-    template = env.get_template("map.osu.jinja")
-    
-    @classmethod
-    def save(cls, output_file, **kwargs):
-        output = cls.template.render(**kwargs)
-        output_file.write(output)
-
+from .osu_file import OsuFile
 
 
 class MainWindow(QtWidgets.QWidget):
@@ -156,7 +145,8 @@ class MainWindow(QtWidgets.QWidget):
                 cs=self.csSpinBox.value(),
                 ar=self.arSpinBox.value(),
                 od=self.odSpinBox.value(),
-                bpm=self.bpmSpinBox.value()
+                bpm=self.bpmSpinBox.value(),
+                version="-"
             )
     
     def processFinished(self):
